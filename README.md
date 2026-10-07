@@ -8,6 +8,18 @@ This repository is not a backlog of vendor integrations and does not imply that 
 
 Its purpose is to study real external products, runtimes, workflows, and developer environments; identify recurring sensitive-data boundaries; and determine where those boundaries map to `redact-secret`, `redact-secret-vault`, `restore`, or a future ecosystem capability.
 
+## Start reading
+
+The initial research set is documented as of 2026-10-07:
+
+- [Five target studies](targets/README.md), with pinned sources or dated official documentation.
+- [Cross-target conclusions and issue #1–#6 outcomes](research/comparisons/agent-runtime-boundaries.md).
+- [Recurring patterns](patterns/README.md) and [candidate contracts](capabilities/README.md).
+- [Product ownership](product-map/README.md), including the optional proposed anonymizer boundary.
+- [Remaining qualification gates](research/open-questions/qualification-gates.md) and [contribution workflow](CONTRIBUTING.md).
+
+Source research does not establish tested integrations. The first prototype candidate is irreversible evidence sanitization; runtime release remains a hypothesis. No vendor adapter or runtime library is shipped here.
+
 ## Why this repository exists
 
 Modern coding systems increasingly combine:

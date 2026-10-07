@@ -285,6 +285,23 @@ Does not own:
 
 `restore` should remain unaware of specific targets such as Baton, Cursor, or DevPod.
 
+### 3.4 Optional `anonymizer` composition (proposal)
+
+The supplied design discussion adds a possible forward-transformation layer:
+normalization of independent findings, deterministic cross-detector overlap
+arbitration, replacement planning, output construction and safe manifests.
+This is a proposed integration role, not evidence of implementation or support.
+
+Core retains its complete standalone scan/policy/redact path. Detector engines
+remain independent. The host owns protocol parsing, structured-field extraction,
+stream framing and artifact delivery. Anonymizer owns no retained mappings,
+release authorization, persistence or runtime lifecycle. Vault owns optional
+reversible capture; restore owns reverse reconstruction.
+
+See [composed transformation](capabilities/composed-transformation.md) and
+[anonymizer ownership](product-map/anonymizer.md). This optional layer does not
+change the core/vault/restore boundaries or require a mandatory pipeline.
+
 ## 4. Research-to-product flow
 
 The preferred decision flow is:

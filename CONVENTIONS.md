@@ -209,6 +209,14 @@ Do not assign restore:
 - crypto/key ownership;
 - vendor-specific integrations.
 
+### Optional anonymizer composition
+
+Use anonymizer only as a proposed owner for cross-detector finding normalization,
+overlap arbitration and forward-transformation planning. Preserve core's
+standalone redaction path. Keep detector implementations, protocol parsing,
+retained mappings, authorization and persistence outside that responsibility.
+See [product ownership](product-map/anonymizer.md); planning is not implementation.
+
 ## 9. Patterns
 
 Create a new pattern only when at least one of the following is true:
